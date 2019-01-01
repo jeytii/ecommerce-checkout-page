@@ -1,0 +1,35 @@
+.topbar {
+	padding: 1rem 0;
+
+	&__search {
+		margin-left: auto;
+		background: $bg--palewhite;
+		border-radius: 2rem;
+	}
+
+	&__mobile-search {
+		margin-left: auto;
+	}
+
+	&__search-input {
+		padding: 0.5rem 0 0.5rem 0.8rem;
+		font-size: 0.9rem;
+	}
+
+	&__search-submit {
+		padding: 0.5rem 0.8rem;
+	}
+
+	&__cart {
+		margin: 0 3vw;
+		color: $black;
+	}
+
+	&__cart-label {
+		background: $bg--palewhite;
+		border-radius: 100%;
+		margin-left: 0.5rem;
+		padding: 0.3rem 0.6rem;
+	}
+
+}

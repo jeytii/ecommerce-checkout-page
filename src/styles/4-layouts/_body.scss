@@ -1,0 +1,19 @@
+.body {
+	margin-top: 1rem;
+	padding: 1rem 0;
+}
+
+.tabs {
+	margin-top: 1rem;
+}
+
+.tab {
+	border: 1px solid #333;
+	padding: 1rem 0;
+
+	&.active {
+		background: #333;
+		border-color: transparent;
+		color: $white;
+	}
+}

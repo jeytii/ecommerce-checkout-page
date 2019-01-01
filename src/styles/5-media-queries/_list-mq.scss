@@ -1,0 +1,29 @@
+@media (max-width: 965px) {
+	.list {
+		margin: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.list {
+		&__bottom {
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 1.5rem;
+			background: #f9f9f9;
+			z-index: 1000;
+		}
+
+		&__back-button {
+			border-radius: 100%;
+			padding: 1rem 1.2rem;
+		}
+
+		&__button-label {
+			display: none;
+		}
+	}
+}

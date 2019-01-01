@@ -1,0 +1,53 @@
+@media (max-width: 965px) {
+	.form {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 375px) {
+	.form {
+		width: 100%;
+
+		&__buttons-container {
+			display: block;
+		}
+		
+		&__item:nth-child(4) {
+			display: block;
+		}
+
+		&__button {
+			width: 100%;
+			padding: 0.8rem 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:first-child {
+				padding: 1rem 0;
+			}
+
+			&:last-child {
+				margin-top: 1rem;
+			}
+
+			svg {
+				width: auto;
+				height: auto;
+			}
+		}
+
+		&__select-container {
+			justify-content: space-between;
+		}
+
+		&__select {
+			width: 48%;
+		}
+
+		&__cvv {
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+}

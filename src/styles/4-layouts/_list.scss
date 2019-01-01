@@ -1,0 +1,120 @@
+.list {
+	flex: 1;
+	margin-right: 3rem;
+
+	&__table {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	&__table-head {
+		text-align: left;
+		box-shadow: 0 1px 0 0 $border--palewhite;
+	}
+
+	&__column-header {
+		padding-bottom: 0.5rem;
+	}
+
+	&__row {
+		box-shadow: 0 1px 0 0 $border--palewhite;
+		padding: 1rem 0;
+	}
+
+	&__product-container {
+		padding: 0.5rem 0;
+	}
+
+	&__product-label {
+		margin-left: 0.8rem;
+	}
+
+	&__product-name {
+		display: block;
+	}
+
+	&__product-color {
+		font-size: 0.85rem;
+	}
+
+	&__select {
+		appearance: none;
+		-webkit-appearance: none;
+		border: 1px solid $border--palewhite;
+		padding: 0.55em 3em 0.55em 1em;
+		border-radius: 2rem;
+		background: url('../vectors/black-chevron-down.svg') no-repeat 80% center;
+	}
+
+	&__range {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid $border--palewhite;
+		border-radius: 2rem;
+	}
+
+	&__button {
+		padding: 0.8em;
+
+		&:disabled rect {
+			fill: #D4D3D3;
+		}
+	}
+
+	&__remove-button {
+		margin-left: auto;
+
+		&:hover path {
+			fill: #333;
+		}
+	}
+
+	&__bottom {
+		margin-top: 1rem;
+	}
+
+	&__bottom-section {
+		flex: 1;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__back-button {
+		border: 1px solid $button-border;
+		padding: 0.7em 3em;
+		border-radius: 2rem;
+
+		&:hover {
+			background: $black;
+			border-color: transparent;
+			color: $white;
+
+			path {
+				fill: $white;
+			}
+		}
+	}
+
+	&__button-label {
+		margin-left: 1rem;
+	}
+
+	&__cost-label {
+		display: block;
+		text-align: right;
+		padding: 0.3rem 0;
+
+		&:last-child {
+			padding: 0.7rem 0;
+			border-top: 1px solid $border--palewhite;
+		}
+	}
+
+	&__cost-title {
+		display: inline-block;
+		width: 70px;
+		text-align: right;
+		margin-right: 0.5rem;
+	}
+
+}

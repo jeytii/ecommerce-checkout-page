@@ -1,0 +1,54 @@
+.mobile-list {
+	padding-bottom: 8rem;
+
+	&__product {
+		position: relative;
+		padding: 1rem 0;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $border--palewhite;
+		}
+	}
+
+	&__product-name {
+		display: block;
+		font-size: 0.9rem;
+	}
+
+	&__product-container {
+		flex: 1;
+		display: block;
+		padding-right: 2rem;
+	}
+
+	&__select {
+		appearance: none;
+		-webkit-appearance: none;
+		width: 60%;
+		background: url('../vectors/black-chevron-down.svg') no-repeat 80% center;
+		border: 1px solid $border--palewhite;
+		padding: 0.5rem 0 0.5rem 1rem;
+		border-radius: 2rem;
+	}
+
+	&__range {
+		// @extend .list__range;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 1rem 0;
+		width: 60%;
+		padding: 0.5rem;
+		border: 1px solid $border--palewhite;
+		border-radius: 2rem;
+	}
+
+	&__price {
+		font-size: 0.9rem;
+	}
+
+	// &__remove-button {
+	// 	position: absolute;
+	// }
+
+}

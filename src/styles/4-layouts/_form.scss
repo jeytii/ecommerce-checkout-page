@@ -1,0 +1,76 @@
+.form {
+	background: $form-background;
+	padding: 1rem 1.5rem;
+	border-radius: 0.8rem;
+
+	&__item {
+		&:first-child {
+			padding: 1rem 0;
+			border-top: 1px solid $separator-border;
+			border-bottom: 1px solid $separator-border;
+		}
+		&:last-child {
+			padding-top: 3rem;
+		}
+		&:not(:first-child) {
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__heading {
+		padding-bottom: 1rem;
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
+	&__button {
+		border: 1px solid $border--white;
+		padding: 0.5rem 1.5rem;
+		border-radius: 2rem;
+		color: $white;
+	}
+
+	&__button-label {
+		margin-left: 0.5rem;
+	}
+
+	&__input {
+		width: 100%;
+		border-bottom: 1px solid $border--gray;
+		padding-bottom: 0.5rem;
+	}
+
+	&__select {
+		appearance: none;
+		-webkit-appearance: none;
+		color: $text--gray;
+		background: url('../vectors/white-chevron-down.svg') no-repeat 90% 25%;
+		border-bottom: 1px solid $border--gray;
+		padding: 0 3rem 0.5rem 0;
+
+		&:last-child {
+			margin-left: 0.5rem;
+		}
+	}
+
+	&__cvv {
+		width: 30%;
+	}
+
+	&__submit {
+		width: 100%;
+		background: $submit-button;
+		font-size: 1rem;
+		padding: 1rem 0;
+		border-radius: 2rem;
+		box-shadow: $submit-button-shadow;
+		cursor: pointer;
+
+		&:hover {
+			background: darken($submit-button, 5%);
+		}
+	}
+}

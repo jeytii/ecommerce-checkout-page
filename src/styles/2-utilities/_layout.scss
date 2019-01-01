@@ -1,0 +1,28 @@
+.transparent {
+	border: none;
+	background: transparent;
+}
+
+.flex--stretch {
+	display: flex;
+	align-items: stretch;
+}
+
+.flex--center {
+	display: flex;
+	align-items: center;
+}
+
+.flex--sb {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ml--auto {
+	margin-left: auto;
+}
+
+.flex--1 {
+	flex: 1;
+}

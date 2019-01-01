@@ -1,0 +1,21 @@
+.heading {
+	font-family: 'Playfair Display';
+	font-weight: 900;
+	font-size: calc(28px + (32 - 28) * (100vw - 320px) / (1366 - 320));
+}
+
+.color--white {
+	color: $white;
+}
+
+.color--palewhite {
+	color: $text--palewhite;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.fluid {
+	font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1366 - 320));
+}
