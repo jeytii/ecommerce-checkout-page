@@ -3,9 +3,9 @@ import Table from './Table';
 import BackButton from './BackButton';
 import Costs from './Costs';
 import MobileList from './MobileList';
-import jacket from '../../images/jacket.jpg';
-import shirt from '../../images/shirt.jpg';
-import shoes from '../../images/shoes.jpg';
+import shirtImage from '../../images/shirt.jpg';
+import shoesImage from '../../images/shoes.jpg';
+import jacketImage from '../../images/jacket.jpg';
 
 export const ListContext = createContext();
 
@@ -14,30 +14,30 @@ export default class List extends Component {
 		items: [
 			{
 				key: '1',
-				'image': shirt,
-				'name': 'Henley T-Shirt',
-				'color': 'Dark Gray',
-				'size': 'S',
-				'quantity': '2',
-				'price': '$39.98'
+				image: shirtImage,
+				name: 'Henley T-Shirt',
+				color: 'Dark Gray',
+				size: 'S',
+				quantity: '2',
+				price: '$39.98'
 			},
 			{
 				key: '2',
-				'image': shoes,
-				'name': 'High Top Sneakers',
-				'color': 'Brown',
-				'size': '10.5',
-				'quantity': '1',
-				'price': '$69.99'
+				image: shoesImage,
+				name: 'High Top Sneakers',
+				color: 'Brown',
+				size: '10.5',
+				quantity: '1',
+				price: '$69.99'
 			},
 			{
 				key: '3',
-				'image': jacket,
-				'name': 'Sweater Hooded',
-				'color': 'Light Gray',
-				'size': 'S',
-				'quantity': '1',
-				'price': '$39.99'
+				image: jacketImage,
+				name: 'Sweater Hooded',
+				color: 'Light Gray',
+				size: 'S',
+				quantity: '1',
+				price: '$39.99'
 			}
 		]
 	}

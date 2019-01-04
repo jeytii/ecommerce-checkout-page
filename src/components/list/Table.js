@@ -15,9 +15,7 @@ export default () => (
 		<tbody>
 			<ListContext.Consumer>
 				{({items}) => ( 
-					items.map(({ key, image, name, color, size, quantity, price }) => (
-						<Product key={key} {...{ image, name, color, size, quantity, price }} />
-					))
+					items.map( item => <Product {...item} /> )
 				)}
 			</ListContext.Consumer>
 		</tbody>
