@@ -1,5 +1,9 @@
 import { Logo } from '../icons';
 
-export default () => (
-	<a href=''><Logo /></a>
-)
+const LinkLogo = () => (
+    <a href=''>
+        <Logo />
+    </a>
+);
+
+export default LinkLogo;

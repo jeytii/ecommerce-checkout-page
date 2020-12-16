@@ -1,0 +1,65 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "import",
+        "prettier"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx"]
+            }
+        }
+    },
+    "rules": {
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-empty": "error",
+        "no-extra-semi": "error",
+        "no-sparse-arrays": "error",
+        "no-template-curly-in-string": "error",
+        "no-regex-spaces": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "warn",
+        "array-callback-return": "error",
+        "block-scoped-var": "error",
+        "curly": "error",
+        "dot-notation": "warn",
+        "eqeqeq": "error",
+        "no-alert": "error",
+        "no-console": "error",
+        "no-else-return": ["warn", { "allowElseIf": false }],
+        "no-empty-function": "error",
+        "no-eq-null": "error",
+        "no-lone-blocks": "error",
+        "no-multi-spaces": ["warn", { "ignoreEOLComments": false }],
+        "no-octal": "warn",
+        "no-redeclare": "error",
+        "no-self-assign": "error",
+        "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+        "import/no-unresolved": "off",
+        "import/namespace": "off",
+        "import/default": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "react/react-in-jsx-scope": "off"
+    }
+}

@@ -1,5 +1,9 @@
 import { MenuIcon } from '../icons';
 
-export default () => (
-	<button className='topbar__menu'><MenuIcon /></button>
-)
+const Menu = () => (
+    <button className='topbar__menu'>
+        <MenuIcon />
+    </button>
+);
+
+export default Menu;

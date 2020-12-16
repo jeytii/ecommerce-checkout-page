@@ -1,69 +1,60 @@
-import { Component, Fragment } from 'react';
+import { useState, useEffect } from 'react';
 import TopBar from './topbar/TopBar';
 import Body from './body/Body';
 import Tabs from './body/Tabs';
 import List from './list/List';
 import Form from './form/Form';
 
-export default class App extends Component {
-	state = {
-		mobileMode: false,
-		narrowScreen: false,
-		component: List
-	}
+const App = () => {
+    const [mobileMode, setMobileMode] = useState(false);
+    const [narrowScreen, setNarrowScreen] = useState(false);
+    const [component, setComponent] = useState({ default: List });
+    const { default: ActiveComponent } = component;
 
-	componentDidMount() {
-		window.addEventListener('resize', this.toggleMobileMode)
-	}
+    function toggleMobileMode() {
+        setMobileMode(window.innerWidth <= 500);
+        setNarrowScreen(window.innerWidth <= 965);
+    }
 
-	toggleMobileMode = () => {
-		this.setState(() => ({
-			mobileMode: window.innerWidth <= 500 ? true : false,
-			narrowScreen: window.innerWidth <= 965 ? true : false
-		}))
-	}
+    function toggleComponent(component, e) {
+        const buttons = e.target.parentElement.children;
 
-	toggleComponent = (component, e) => {
-		const et = e.target;
-		const buttons = et.parentElement.children;
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('active');
+        }
 
-		for(let i = 0; i < buttons.length; i++) {
-			buttons[i].classList.remove('active');
-		}
+        e.target.classList.add('active');
 
-		et.classList.add('active');
+        setComponent({ default: component });
+    }
 
-		this.setState(() => ({ component }))
-	}
+    useEffect(() => {
+        window.addEventListener('resize', toggleMobileMode);
+    }, []);
 
-	render() {
-		const { mobileMode, narrowScreen, component: ActiveComponent } = this.state;
+    return (
+        <section className='wrapper'>
+            <TopBar {...{ mobileMode }} />
 
-		return(
-			<section className='wrapper'>
-				
-				<TopBar {...{ mobileMode }} />
-				
-				{
-					(narrowScreen || window.innerWidth <= 965)
-					? (<Tabs component={ActiveComponent} toggleComponent={this.toggleComponent} />)
-					: null
-				}
-				
-				<Body>
-					{
-						(!narrowScreen && window.innerWidth >= 965)
-						? (
-							<Fragment>
-								<List {...{ mobileMode }} />
-								<Form />
-							</Fragment>
-						)
-						: <ActiveComponent />
-					}
-				</Body>
-			
-			</section>
-		)
-	}
-}
+            {narrowScreen || window.innerWidth <= 965 ? (
+                <Tabs
+                    component={ActiveComponent}
+                    toggleComponent={toggleComponent}
+                />
+            ) : null}
+
+            <Body>
+                {!narrowScreen && window.innerWidth >= 965 ? (
+                    <>
+                        <List {...{ mobileMode }} />
+                        <Form />
+                    </>
+                ) : (
+                    <ActiveComponent />
+                )}
+            </Body>
+        </section>
+    );
+};
+
+export default App;

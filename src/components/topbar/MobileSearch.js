@@ -1,7 +1,9 @@
 import { SearchIcon } from '../icons';
 
-export default () => (
-	<button className='topbar__mobile-search'>
-		<SearchIcon />
-	</button>
-)
+const MobileSearch = () => (
+    <button className='topbar__mobile-search'>
+        <SearchIcon />
+    </button>
+);
+
+export default MobileSearch;
