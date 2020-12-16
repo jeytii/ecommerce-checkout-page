@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import { Component, Fragment } from 'react';
 import TopBar from './topbar/TopBar';
 import Body from './body/Body';
 import Tabs from './body/Tabs';

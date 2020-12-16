@@ -1,4 +1,4 @@
-import React, { Component, createContext } from 'react';
+import { Component, createContext } from 'react';
 import Table from './Table';
 import BackButton from './BackButton';
 import Costs from './Costs';

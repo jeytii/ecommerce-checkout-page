@@ -5,7 +5,7 @@ export default {
 	entry: './src/index.js',
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: '[hash].js'
+		filename: '[chunkhash].js'
 	},
 	module: {
 		rules: [

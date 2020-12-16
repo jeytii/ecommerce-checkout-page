@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default ({ baseClass, image, name, color }) => (
 	<div className={`${baseClass}__product-container flex--center`}>
 		<div>

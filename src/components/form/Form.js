@@ -1,4 +1,3 @@
-import React from 'react';
 import FormItem from './FormItem';
 import { CreditCardIcon, PaypalIcon } from '../icons';
 

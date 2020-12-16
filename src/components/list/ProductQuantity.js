@@ -1,4 +1,3 @@
-import React from 'react';
 import { PlusIcon, MinusIcon } from '../icons';
 
 export default ({ baseClass, quantity }) => (

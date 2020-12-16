@@ -1,4 +1,3 @@
-import React from 'react';
 import { ListContext } from './List';
 import ProductInfo from './ProductInfo';
 import ProductSize from './ProductSize';

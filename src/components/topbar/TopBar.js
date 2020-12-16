@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from './Logo';
 import SearchForm from './SearchForm';
 import MobileSearch from './MobileSearch';

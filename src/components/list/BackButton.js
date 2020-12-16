@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChevronLeftIcon } from '../icons';
 
 export default () => (
