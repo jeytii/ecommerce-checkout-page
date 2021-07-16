@@ -25,14 +25,13 @@
 		appearance: none;
 		-webkit-appearance: none;
 		width: 60%;
-		background: url('../vectors/black-chevron-down.svg') no-repeat 80% center;
+		background: url('../assets/vectors/black-chevron-down.svg') no-repeat 80% center;
 		border: 1px solid $border--palewhite;
 		padding: 0.5rem 0 0.5rem 1rem;
 		border-radius: 2rem;
 	}
 
 	&__range {
-		// @extend .list__range;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -46,9 +45,5 @@
 	&__price {
 		font-size: 0.9rem;
 	}
-
-	// &__remove-button {
-	// 	position: absolute;
-	// }
 
 }
